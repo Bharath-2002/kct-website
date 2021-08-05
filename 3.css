@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body{
+  min-height: 100vh;
+  background: url(images/login.jpg) no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header1{
+  background-color: #5d5e5e;
+
+}
+nav{
+  display: flex;
+  padding: 1% 1%;
+  justify-content: space-between;
+  align-items: center;
+  transition: 2s;
+  flex-direction:row;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 2;
+}
+.navbar{
+  background-color: rgba(28, 4, 30, 0.562);
+}
+nav img{
+  width: 180px;
+
+}
+.nav-links{
+  flex: 1;
+  text-align: right;  
+}
+.nav-links ul li{
+  list-style: none;
+  display: inline-block;
+  padding: 8px 12px;
+  position: relative;
+ 
+}
+.nav-links ul li a{
+  color: #fff;
+  text-decoration: none;
+  font-size: 20px;
+
+}
+.nav-links ul li::after{
+  content: '';
+  width: 0%;
+  height: 2px;
+  background: #fa5f05;
+  display: block;
+  margin: auto;
+  transition:0.5s
+
+}
+.nav-links ul li:hover::after{
+  width: 100%;
+}
+
+
+
+.contact-section{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-info{
+  color: #fff;
+  max-width: 500px;
+  line-height: 65px;
+  padding-left: 50px;
+  font-size: 18px;
+}
+
+.contact-info i{
+  margin-right: 20px;
+  font-size: 25px;
+}
+
+.contact-form{
+  max-width: 700px;
+  margin-right: 50px;
+}
+
+.contact-info, .contact-form{
+  flex: 1;
+}
+
+.contact-form h2{
+  color: #fff;
+  text-align: center;
+  font-size: 35px;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+
+.contact-form .text-box{
+  background: #000;
+  color: #fff;
+  border: none;
+  width: calc(50% - 10px);
+  height: 50px;
+  padding: 12px;
+  font-size: 15px;
+  border-radius: 5px;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  opacity: 0.9;
+}
+
+
+
+.contact-form textarea{
+  background: #000;
+  color: #fff;
+  border: none;
+  width: 100%;
+  padding: 12px;
+  font-size: 15px;
+  min-height: 200px;
+  max-height: 400px;
+  resize: vertical;
+  border-radius: 5px;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  opacity: 0.9;
+}
+
+.contact-form .send-btn{
+  float: right;
+  background: #2E94E3;
+  color: #fff;
+  border: none;
+  width: 120px;
+  height: 40px;
+  font-size: 15px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+  transition-property: background;
+}
+
+.contact-form .send-btn:hover{
+  background: #0582E3;
+}
+iframe{
+  position: absolute;
+  top: 870px;
+  left: 0px;
+  
+}
+.footer{
+  align-items: center;
+  padding-top:40px;
+  box-sizing: border-box;
+  width:100%;
+  text-align: center;
+  background-color: black;
+  color: white;
+  position: absolute;
+  top: 185%;
+
+
+}
+#socials{
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.footer li{
+ margin:20px;
+}
+.footer p{
+  align-self: flex-start;
+}  
+.footer p{
+  padding-top:10px;
+  text-transform: capitalize;
+  
+}
+.footer .facebook:hover{
+  color:rgb(9, 89, 209);
+  
+}
+.footer .google:hover{
+  color:rgb(3, 189, 18);
+  
+}
+.footer .instagram:hover{
+  color:rgb(196, 13, 165);
+  
+}
+.footer .twitter:hover{
+  color:rgb(7, 204, 230);
+  
+}
+.footer .youtube:hover{
+  color:rgb(219, 3, 3);
+  
+}
+
+.footer a{
+  margin-bottom:20px;
+  padding-top:10px;
+  text-decoration: none;
+  color: white;
+
+}
